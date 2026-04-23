@@ -1,0 +1,15 @@
+Django
+
+ djangorestframework
+
+ djangorestframework-simplejwt
+
+ stripe
+
+ paystack-api
+
+ django-cors-headers
+
+ gunicorn
+
+ psycopg2-binary
