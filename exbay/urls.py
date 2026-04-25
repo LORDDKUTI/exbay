@@ -1,5 +1,5 @@
 """
-URL configuration for webstore project.
+URL configuration for exbay project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -27,3 +27,5 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT) 
+
+    

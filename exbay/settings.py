@@ -5,6 +5,7 @@ from datetime import timedelta
 # Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
 # Security
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "dev-secret-key")
 PAYSTACK_SECRET_KEY = os.environ.get("PAYSTACK_SECRET_KEY", "")
@@ -103,7 +104,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'webstore.urls'
+ROOT_URLCONF = 'exbay.urls'
 
 TEMPLATES = [
     {
@@ -120,7 +121,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'webstore.wsgi.application'
+WSGI_APPLICATION = 'exbay.wsgi.application'
 
 # Database
 DATABASES = {

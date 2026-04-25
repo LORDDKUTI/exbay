@@ -26,7 +26,7 @@ urlpatterns = [
     
     path("orders/<int:pk>/status/", views.order_status_update, name="orders-status-update"),
     path("products/<int:pk>/adjust/", views.ProductAdjustInventoryView.as_view(), name="product-adjust"),
-
+    
     #cart
     path("cart/", views.CartListView.as_view(), name="cart-list"),
     path("cart/add/", views.AddToCartView.as_view(), name="add-cart"),

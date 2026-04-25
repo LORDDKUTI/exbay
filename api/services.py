@@ -50,7 +50,6 @@ class CartService:
                 merged += 1
             return merged
 
-
 def create_order_from_cart(*, user=None, session_key=None, address_data: dict = None, payment_reference: str = ""):
     """
     Create Order and OrderItems from cart subject (user or session_key).
@@ -126,7 +125,7 @@ def create_order_from_cart(*, user=None, session_key=None, address_data: dict = 
 
 def initialize_paystack_payment(order, email):
     url = "https://api.paystack.co/transaction/initialize"
-    reference= f"webstore-{order.id}-{uuid.uuid4().hex[:8]}"
+    reference= f"exbay-{order.id}-{uuid.uuid4().hex[:8]}"
     # reference= str(order.id)
     ##ensure Payment record exist with rec
     Payment.objects.create(
